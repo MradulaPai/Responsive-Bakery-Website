@@ -1,57 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery Name</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+  <meta charset="UTF-8">
+  <title>Sweet Treats Bakery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Hero/Header Section -->
-    <header id="hero">
-        <h1>Bakery Name</h1>
-        <p class="tagline">Your daily dose of sweetness!</p>
-    </header>
+  <header id="hero">
+    <h1>Sweet Treats Bakery</h1>
+    <p class="tagline">Freshly Baked Happiness</p>
+  </header>
 
-    <!-- Menu Section -->
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-items">
-            <!-- Menu Item 1 -->
-            <div class="menu-item">
-                <!-- Placeholder image; replace with your own bakery item image -->
-                <img src="https://via.placeholder.com/300x200" alt="Delicious Chocolate Cake">
-                <h3>Chocolate Cake</h3>
-                <p>Rich and moist chocolate cake with creamy frosting.</p>
-            </div>
-            <!-- Menu Item 2 -->
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/300x200" alt="Assorted Pastries">
-                <h3>Assorted Pastries</h3>
-                <p>A variety of freshly baked pastries to brighten your day.</p>
-            </div>
-            <!-- Menu Item 3 -->
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/300x200" alt="Tasty Cupcakes">
-                <h3>Cupcakes</h3>
-                <p>Cute and tasty cupcakes in different flavors.</p>
-            </div>
-        </div>
-    </section>
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/300x200" alt="Cupcakes">
+        <h3>Cupcakes</h3>
+        <p>Colorful, delicious, and perfect for every celebration.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Welcome to our family-owned bakery! We are passionate about baking fresh bread, cakes, and pastries every day. Come and taste the love we put into our creations.</p>
-    </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form" action="contact.php" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      <label>Message:</label>
+      <textarea name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:contact@bakery.com">contact@bakery.com</a></p>
-        <p>Location: 123 Baker Street, Sweetville</p>
-    </section>
-
+  <script src="scripts.js"></script>
 </body>
 </html>
