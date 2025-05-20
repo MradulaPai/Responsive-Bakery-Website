@@ -1,85 +1,52 @@
-/* Base Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff8f0;  /* Soft cream background */
-    color: #333;
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3 {
-    text-align: center;
-    color: #5a3723; /* Warm brown color for headings */
+header {
+  background: #fddde6;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-/* Hero/Header Section */
-#hero {
-    background-color: #fddde6;  /* Soft pink background */
-    padding: 60px 20px;
-}
-#hero h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-#hero .tagline {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #7f5a58; /* Muted brown for tagline */
-}
-
-/* Menu Section */
-#menu {
-    padding: 40px 20px;
-    background-color: #fff;
-}
 .menu-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Space between items */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
 }
+
 .menu-item {
-    background-color: #f7f7f7; /* Light grey background for menu cards */
-    border-radius: 10px;
-    padding: 15px;
-    max-width: 300px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.menu-item img {
-    width: 100%;
-    border-radius: 8px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* About Us Section */
-#about {
-    padding: 40px 20px;
-}
-#about p {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Contact Section */
-#contact {
-    padding: 40px 20px;
-    background-color: #fff;
-}
-#contact a {
-    color: #5a3723;
-    text-decoration: none;
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
 }
 
-/* Responsive (Mobile) Styles */
-@media (max-width: 600px) {
-    #hero h1 {
-        font-size: 2em;
-    }
-    .menu-items {
-        flex-direction: column;
-        align-items: center;
-    }
-    .menu-item {
-        max-width: 80%;
-    }
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
+button {
+  background: #5a3723;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
