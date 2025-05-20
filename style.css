@@ -1,1 +1,85 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;  /* Soft cream background */
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #5a3723; /* Warm brown color for headings */
+}
+
+/* Hero/Header Section */
+#hero {
+    background-color: #fddde6;  /* Soft pink background */
+    padding: 60px 20px;
+}
+#hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+#hero .tagline {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #7f5a58; /* Muted brown for tagline */
+}
+
+/* Menu Section */
+#menu {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+.menu-item {
+    background-color: #f7f7f7; /* Light grey background for menu cards */
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* About Us Section */
+#about {
+    padding: 40px 20px;
+}
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+#contact a {
+    color: #5a3723;
+    text-decoration: none;
+}
+
+/* Responsive (Mobile) Styles */
+@media (max-width: 600px) {
+    #hero h1 {
+        font-size: 2em;
+    }
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item {
+        max-width: 80%;
+    }
+}
 
