@@ -50,3 +50,72 @@ button {
   border-radius: 6px;
   cursor: pointer;
 }
+/* Contact Form Section */
+#contact {
+  background-color: #fff8f5;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #5a3723;
+  margin-bottom: 30px;
+}
+
+/* Form container */
+form {
+  max-width: 500px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels and inputs */
+form label {
+  text-align: left;
+  font-weight: bold;
+  color: #5a3723;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit button */
+form button {
+  background-color: #5a3723;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #3e2518;
+}
+
+/* Status message */
+#form-status {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #d9534f; /* red for error */
+}
+
